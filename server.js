@@ -2,9 +2,9 @@ const express = require('express')
 const knex = require("knex")
 const cors = require('cors')
 const bodyparser = require('body-parser')
-const register = require('./controllers/register')
-const signin = require('./controllers/signin')
-const detect = require('./controllers/detect')
+const register = require('./Controllers/register')
+const signin = require('./Controllers/signin')
+const detect = require('./Controllers/detect')
 
 const db = knex({
 	client: 'pg',
