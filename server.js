@@ -9,7 +9,8 @@ const detect = require('./controllers/detect')
 const db = knex({
 	client: 'pg',
   connection: {
-    host : '127.0.0.1',
+    connectionString : 'process.env.DATABASE_URL.0.0.1',
+    ssl: true,
     user : 'postgres',
     password : 'sherlocked',
     database : 'smart-app-db'
