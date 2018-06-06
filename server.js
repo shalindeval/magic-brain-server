@@ -27,4 +27,4 @@ app.post('/register', (req,res) => {register.handleRegister(req,res,db,knex)})
 app.post('/signin', (req,res)=>{signin.handleSignin(req,res,db)})
 app.post('/detect',(req,res) => {detect.handleClarifai(req,res)})
 
-app.listen(3001);
+app.listen(process.env.PORT || 3001,()=>{console.log("running on port")});
